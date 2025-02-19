@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const quickLinks = [
   { name: "Home", path: "/" },
-  { name: "About us", path: "/about-us" },
-  { name: "Landmark Projects", path: "/landmark-project" },
+  { name: "About Us", path: "/about-us" },
+  { name: "Financial Planning", path: "/financial-planning" },
   { name: "Our Expertise", path: "/our-expertise" },
   { name: "Certifications", path: "/certifications" },
   { name: "Contact Us", path: "/contact-us" }
@@ -19,9 +19,9 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16">
             {/* Logo and Description */}
             <div className="md:col-span-4">
-              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-white mb-6">Saariga</h2>
+              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-white mb-6">NCR Consulting</h2>
               <p className="font-roboto text-[15px] text-blue-100/90 leading-relaxed">
-                Saariga Constructions Pvt. Ltd. is a leading construction management firm, known for our commitment to quality, innovation, and sustainability.
+                NCR Consulting is a leading chartered accountancy firm, providing comprehensive financial services, tax advisory, and business consulting solutions.
               </p>
             </div>
 
@@ -48,16 +48,22 @@ export function Footer() {
               <div className="space-y-6">
                 <div className="space-y-3">
                   <p className="font-roboto text-[15px] text-blue-100/90">
-                    Plot No. 137 Sector 16-A, Faridabad, Haryana-121002
+                    123, Business District<br />
+                    Sector 62, Noida<br />
+                    Uttar Pradesh - 201301
                   </p>
                   <p className="font-roboto text-[15px] text-blue-100/90">
-                    +91 8744004213
+                    Office: +91-120-4567890<br />
+                    Mobile: +91-98765-43210
+                  </p>
+                  <p className="font-roboto text-[15px] text-blue-100/90">
+                    Email: info@ncrconsulting.in
                   </p>
                 </div>
                 <div className="flex space-x-4">
-                  <SocialLink href="/facebook" icon={Facebook} />
-                  <SocialLink href="/twitter" icon={Twitter} />
-                  <SocialLink href="/linkedin" icon={Linkedin} />
+                  <SocialLink href="https://facebook.com" icon={Facebook} />
+                  <SocialLink href="https://twitter.com" icon={Twitter} />
+                  <SocialLink href="https://linkedin.com" icon={Linkedin} />
                 </div>
               </div>
             </div>
@@ -71,13 +77,15 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <p className="font-roboto text-[14px] text-blue-100/80">
-                © 2025 Saariga Construction Company. All rights reserved.
+                © 2024 NCR Consulting. All rights reserved.
               </p>
             </div>
 
             <div className="flex flex-wrap items-center justify-start md:justify-end gap-8">
               {[
-
+                { name: "Privacy Policy", path: "/privacy" },
+                { name: "Terms of Service", path: "/terms" },
+                { name: "Disclaimer", path: "/disclaimer" }
               ].map((item) => (
                 <a
                   key={item.name}

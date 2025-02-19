@@ -10,7 +10,7 @@ export function Navbar() {
   const navigationLinks = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about-us" },
-    { name: "Landmark Project", path: "/landmark-project" },
+    { name: "Financial Planning", path: "/landmark-project" },
     { name: "Our Expertise", path: "/our-expertise" },
     { name: "Certifications", path: "/certifications" },
   ];

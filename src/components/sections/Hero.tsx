@@ -25,14 +25,29 @@ export function Hero() {
     <div className="relative h-screen w-full bg-gray-900 overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/60 via-[#0A0A0A]/90 to-[#0A0A0A]/90" />
+        {/* Background Image */}
         <div 
-          className="absolute inset-0 opacity-5"
+          className="absolute inset-0"
           style={{
             backgroundImage: `url("https://photodrive.starshinebrands.com/wp-content/uploads/2025/02/Untitled-1.png")`,
-            backgroundSize: '30px 30px'
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
           }}
         />
+        
+        {/* Pattern Overlay */}
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `url("https://photodrive.starshinebrands.com/wp-content/uploads/2025/02/Untitled-1.png")`,
+            backgroundSize: '00px 00px',
+            backgroundRepeat: 'repeat'
+          }}
+        />
+
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-[#0A0A0A]/90 to-[#0A0A0A]/95" />
       </div>
 
       {/* Main Content */}

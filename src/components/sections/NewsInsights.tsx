@@ -53,24 +53,6 @@ export function NewsInsights() {
       description: "Expert business consulting including company formation, compliance management, financial planning, and strategic business advisory for sustainable growth.",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3"
     },
-    {
-      id: 5,
-      title: "Accounting & Bookkeeping",
-      category: "Accounts",
-      location: "Business",
-      value: "Financial Records",
-      description: "Professional bookkeeping, accounting, and financial statement preparation services. We maintain accurate financial records and ensure compliance with accounting standards.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3"
-    },
-    {
-      id: 6,
-      title: "Project Finance",
-      category: "Finance",
-      location: "Corporate",
-      value: "Financial Planning",
-      description: "Comprehensive project financing services including preparation of CMA data, financial projections, and liaison with banks/financial institutions for fund raising.",
-      image: "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?ixlib=rb-4.0.3"
-    }
   ];
 
   return (
