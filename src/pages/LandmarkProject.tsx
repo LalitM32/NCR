@@ -175,10 +175,6 @@ export default function FinancialPlanning() {
                   {
                     title: "Implementation",
                     description: "Executing the planned strategies with precision and attention to detail."
-                  },
-                  {
-                    title: "Regular Review",
-                    description: "Continuous monitoring and adjustment of your financial plan to ensure optimal results."
                   }
                 ].map((step, index) => (
                   <motion.div
