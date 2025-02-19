@@ -23,8 +23,8 @@ export default function ContactUs() {
       <section className="relative h-[60vh] w-full bg-gray-800">
         <div className="absolute inset-0">
           <img
-            src="https://saariga.co.in/wp-content/uploads/2024/03/WhatsApp-Image-2021-12-21-at-10.51.42-AM-1024x576.jpeg" 
-            alt="Turner Construction Contact"
+            src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3" 
+            alt="NCR Consulting Contact"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-gray-800/60" />
@@ -46,7 +46,7 @@ export default function ContactUs() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
             >
-              Building Connections, <br className="hidden lg:block" />Creating Futures
+              Let's Discuss Your <br className="hidden lg:block" />Financial Goals
             </motion.h1>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function ContactUs() {
             whileHover={{ y: -2 }}
           >
             <Mail className={`mr-2 w-5 h-5 ${isJoinTeam ? "hidden" : "block"}`} />
-            General Inquiry
+            Business Inquiry
           </motion.button>
           <motion.button
             onClick={toggleForm}
@@ -77,7 +77,7 @@ export default function ContactUs() {
             whileHover={{ y: -2 }}
           >
             <Phone className={`mr-2 w-5 h-5 ${isJoinTeam ? "block" : "hidden"}`} />
-            Join Our Team
+            Career Opportunities
           </motion.button>
         </div>
       </div>
@@ -95,7 +95,7 @@ export default function ContactUs() {
               className="lg:pr-12"
             >
               <h2 className="font-playfair text-3xl font-bold text-gray-900 mb-8">
-                {isJoinTeam ? "Join Our Team of Experts" : "How Can We Help You?"}
+                {isJoinTeam ? "Join Our Team of Experts" : "Schedule a Consultation"}
               </h2>
 
               <form className="space-y-6">
@@ -142,18 +142,32 @@ export default function ContactUs() {
                       <input
                         type="tel"
                         className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#4181DA] focus:border-transparent outline-none transition-all"
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="+91 98765 43210"
                       />
                     </div>
 
                     <div className="space-y-2">
                       <label className="block font-roboto text-sm font-medium text-gray-700">
-                        Project Details
+                        Service Required
+                      </label>
+                      <select className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#4181DA] focus:border-transparent outline-none transition-all">
+                        <option value="">Select a service</option>
+                        <option value="tax">Tax Advisory</option>
+                        <option value="audit">Audit & Assurance</option>
+                        <option value="gst">GST Services</option>
+                        <option value="advisory">Business Advisory</option>
+                        <option value="compliance">Corporate Compliance</option>
+                      </select>
+                    </div>
+
+                    <div className="space-y-2">
+                      <label className="block font-roboto text-sm font-medium text-gray-700">
+                        Message
                       </label>
                       <textarea
                         rows={4}
                         className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#4181DA] focus:border-transparent outline-none transition-all resize-none"
-                        placeholder="Tell us about your project..."
+                        placeholder="Tell us about your requirements..."
                       />
                     </div>
                   </>
@@ -163,11 +177,13 @@ export default function ContactUs() {
                       <label className="block font-roboto text-sm font-medium text-gray-700">
                         Position Applying For
                       </label>
-                      <input
-                        type="text"
-                        className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#4181DA] focus:border-transparent outline-none transition-all"
-                        placeholder="e.g., Project Manager"
-                      />
+                      <select className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#4181DA] focus:border-transparent outline-none transition-all">
+                        <option value="">Select a position</option>
+                        <option value="ca">Chartered Accountant</option>
+                        <option value="article">Article Assistant</option>
+                        <option value="tax">Tax Consultant</option>
+                        <option value="audit">Audit Assistant</option>
+                      </select>
                     </div>
 
                     <div className="space-y-2">
@@ -185,12 +201,12 @@ export default function ContactUs() {
 
                     <div className="space-y-2">
                       <label className="block font-roboto text-sm font-medium text-gray-700">
-                        Cover Letter
+                        Experience & Qualifications
                       </label>
                       <textarea
                         rows={4}
                         className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#4181DA] focus:border-transparent outline-none transition-all resize-none"
-                        placeholder="Tell us why you'd be a great fit..."
+                        placeholder="Tell us about your qualifications and experience..."
                       />
                     </div>
                   </>
@@ -202,7 +218,7 @@ export default function ContactUs() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  {isJoinTeam ? "Submit Application" : "Send Message"}
+                  {isJoinTeam ? "Submit Application" : "Schedule Consultation"}
                   <Send className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </motion.button>
               </form>
@@ -225,12 +241,12 @@ export default function ContactUs() {
                     </div>
                     <div>
                       <h4 className="font-playfair text-lg font-semibold text-gray-900 mb-2">
-                        Headquarters
+                        Office Location
                       </h4>
                       <p className="font-roboto text-gray-600 leading-relaxed">
-                        Plot No. 137, Sector 16A<br/>
-                        Faridabad, Haryana 121002<br/>
-                        India
+                        123, Business District<br/>
+                        Sector 62, Noida<br/>
+                        Uttar Pradesh, India
                       </p>
                     </div>
                   </motion.div>
@@ -247,8 +263,8 @@ export default function ContactUs() {
                         Phone 
                       </h4>
                       <p className="font-roboto text-gray-600">
-                        Landline: +91-129-4879501<br/>
-                        Mobile: +91-8744004213<br/>
+                        Office: +91-120-4567890<br/>
+                        Mobile: +91-98765-43210<br/>
                       </p>
                     </div>
                   </motion.div>
@@ -265,9 +281,9 @@ export default function ContactUs() {
                         Email & Support
                       </h4>
                       <p className="font-roboto text-gray-600">
-                        General: info@saariga.net<br/>
-                        Careers: careers@saariga.net<br/>
-                        Support: contact@saariga.net
+                        General: info@ncrconsulting.in<br/>
+                        Careers: careers@ncrconsulting.in<br/>
+                        Support: support@ncrconsulting.in
                       </p>
                     </div>
                   </motion.div>
@@ -279,8 +295,8 @@ export default function ContactUs() {
                   Office Hours
                 </h3>
                 <div className="space-y-2 font-roboto">
-                  <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                  <p>Saturday: 9:00 AM - 2:00 PM</p>
+                  <p>Monday - Friday: 9:30 AM - 6:30 PM</p>
+                  <p>Saturday: 10:00 AM - 4:00 PM</p>
                   <p>Sunday: Closed</p>
                 </div>
               </div>
