@@ -21,7 +21,7 @@ export function OurCulture() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            Building Excellence Through Innovation
+            Excellence in Financial Services
           </motion.h2>
           <motion.p 
             className="font-roboto text-[16px] md:text-[18px] text-gray-600 leading-relaxed"
@@ -30,7 +30,7 @@ export function OurCulture() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            We build excellence through innovation. Delivering quality construction with expertise, technology, and dedication—bringing your vision to life.
+            We provide comprehensive financial solutions with expertise and dedication—helping businesses achieve their financial goals.
           </motion.p>
         </div>
 
@@ -46,18 +46,8 @@ export function OurCulture() {
             <div className="bg-gray-50 rounded-2xl p-8 md:p-10 lg:p-12 h-full">
               <div className="flex items-center gap-4 mb-6">
                 <span className="w-12 h-12 rounded-full bg-[#4181DA] flex items-center justify-center">
-                  <svg 
-                    className="w-6 h-6 text-white" 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
-                    stroke="currentColor"
-                  >
-                    <path 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeWidth={2} 
-                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" 
-                    />
+                  <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </span>
                 <h3 className="font-playfair text-[24px] md:text-[28px] font-bold text-gray-900">
@@ -65,22 +55,21 @@ export function OurCulture() {
                 </h3>
               </div>
               <p className="font-roboto text-[16px] text-gray-600 leading-relaxed mb-6">
-               Saariga Constructions Private Limited (SCPL) is transforming India's infrastructure landscape through excellence in construction and sustainable development.
+                NCR CONSULTING is a leading chartered accountancy firm providing comprehensive financial services and solutions.
               </p>
               <ul className="space-y-4 font-roboto text-[15px] text-gray-600">
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#4181DA]" />
-                  Deliver premium construction services as an A-Class certified contractor for PWD-MP and UPSIDCO, backed by ₹120 crore in successful projects
+                  Expert team of chartered accountants with decades of combined experience
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#4181DA]" />
-                  Drive innovation across civil infrastructure, retail, and institutional projects under the leadership of Ms. Neha Singh
+                  Comprehensive services in taxation, audit, and financial advisory
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#4181DA]" />
-                  Build with purpose to strengthen India's development while maintaining the highest quality standards
+                  Committed to delivering excellence and maintaining the highest professional standards
                 </li>
-
               </ul>
             </div>
           </motion.div>
@@ -95,18 +84,8 @@ export function OurCulture() {
             <div className="bg-gray-50 rounded-2xl p-8 md:p-10 lg:p-12 h-full">
               <div className="flex items-center gap-4 mb-6">
                 <span className="w-12 h-12 rounded-full bg-[#4181DA] flex items-center justify-center">
-                  <svg 
-                    className="w-6 h-6 text-white" 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
-                    stroke="currentColor"
-                  >
-                    <path 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeWidth={2} 
-                      d="M13 10V3L4 14h7v7l9-11h-7z" 
-                    />
+                  <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </span>
                 <h3 className="font-playfair text-[24px] md:text-[28px] font-bold text-gray-900">
@@ -114,20 +93,20 @@ export function OurCulture() {
                 </h3>
               </div>
               <p className="font-roboto text-[16px] text-gray-600 leading-relaxed mb-6">
-               SCPL's mission is to drive excellence in construction through innovative thinking and sustainable practices, contributing to India's self-reliance vision of "Aatmnirbhar Bharat."
+                To empower businesses with expert financial guidance and innovative solutions for sustainable growth.
               </p>
               <ul className="space-y-4 font-roboto text-[15px] text-gray-600">
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#4181DA]" />
-                  Create forward-thinking solutions through advanced construction practices and technology
+                  Provide strategic financial planning and compliance solutions
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#4181DA]" />
-                  Foster sustainable growth while delivering exceptional quality and scalability
+                  Ensure client success through personalized advisory services
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#4181DA]" />
-                  Build collaborative partnerships to strengthen national infrastructure development
+                  Maintain the highest standards of professional ethics and integrity
                 </li>
               </ul>
             </div>

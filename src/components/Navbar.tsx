@@ -45,7 +45,7 @@ export function Navbar() {
                 isScrolled ? "text-gray-900" : "text-white"
               }`}
             >
-              Saariga
+              NCR Accounting
               <span className="text-blue-500">.</span>
             </motion.a>
 

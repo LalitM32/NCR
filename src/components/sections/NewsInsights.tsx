@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 interface Project {
   id: number;
@@ -13,34 +14,62 @@ interface Project {
 
 export function NewsInsights() {
   const [activeProject, setActiveProject] = useState<number>(0);
+  const [isHovered, setIsHovered] = useState<number | null>(null);
 
   const projects: Project[] = [
     {
       id: 1,
-      title: "LOCOMOTIVE Railway Shed of IRCON International",
-      category: "Railway",
-      location: "Rourkela, Odisha",
-      value: "",
-      description: "SCPL and Icon International engineered a heavy-load industrial complex in Odisha with 50-ton crane capacity for precision engine servicing.",
-      image: "https://saariga.co.in/wp-content/uploads/2024/03/22-1024x684.jpg"
+      title: "Tax Planning & Compliance",
+      category: "Direct Tax",
+      location: "Business & Individual",
+      value: "Tax Solutions",
+      description: "Comprehensive tax planning, ITR filing, tax assessments, and compliance management. We help minimize tax liability while ensuring full compliance with tax laws.",
+      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3"
     },
     {
       id: 2,
-      title: "Multi-Level Car Parking of PWD in Mussoorrie",
-      category: "Parking",
-      location: "Mussoorie, Uttarakhand",
-      value: "",
-      description: "SCPL designed India’s first eco-sensitive multilevel car parking in the hills, seamlessly hosting 212 vehicles while preserving natural resources.",
-      image: "https://saariga.co.in/wp-content/uploads/2024/03/WhatsApp-Image-2021-12-21-at-10.51.42-AM-1024x576.jpeg"
+      title: "GST Services",
+      category: "Indirect Tax",
+      location: "Business",
+      value: "GST Compliance",
+      description: "End-to-end GST solutions including registration, monthly/quarterly returns, reconciliations, and GST audit services. Stay compliant with evolving GST regulations.",
+      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3"
     },
     {
       id: 3,
-      title: "3-Floor Multilevel Car Parking in Rohtak, Haryana",
-      category: "Parking",
-      location: "Rohtak, Haryana",
-      value: "",
-      description: "SCPL’s 100-year-stable parking-commercial hub in Rohtak’s Asia’s largest cloth market tackles congestion and drives government revenue.",
-      image: "https://saariga.co.in/wp-content/uploads/2024/03/0U9B5023-1024x683.jpg"
+      title: "Audit & Assurance",
+      category: "Audit",
+      location: "Corporate",
+      value: "Assurance Services",
+      description: "Statutory audits, internal audits, tax audits, and special purpose audits. We ensure accuracy and compliance while providing valuable business insights.",
+      image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3"
+    },
+    {
+      id: 4,
+      title: "Business Advisory",
+      category: "Advisory",
+      location: "All Sectors",
+      value: "Strategic Consulting",
+      description: "Expert business consulting including company formation, compliance management, financial planning, and strategic business advisory for sustainable growth.",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3"
+    },
+    {
+      id: 5,
+      title: "Accounting & Bookkeeping",
+      category: "Accounts",
+      location: "Business",
+      value: "Financial Records",
+      description: "Professional bookkeeping, accounting, and financial statement preparation services. We maintain accurate financial records and ensure compliance with accounting standards.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3"
+    },
+    {
+      id: 6,
+      title: "Project Finance",
+      category: "Finance",
+      location: "Corporate",
+      value: "Financial Planning",
+      description: "Comprehensive project financing services including preparation of CMA data, financial projections, and liaison with banks/financial institutions for fund raising.",
+      image: "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?ixlib=rb-4.0.3"
     }
   ];
 
@@ -55,7 +84,7 @@ export function NewsInsights() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            FEATURED PROJECTS
+            OUR SERVICES
           </motion.span>
           <motion.h2 
             className="font-playfair text-[32px] md:text-[38px] lg:text-[42px] text-gray-900 font-bold leading-tight mb-6"
@@ -64,7 +93,7 @@ export function NewsInsights() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            Building Excellence Through Innovation
+            Comprehensive Financial Solutions
           </motion.h2>
           <motion.p 
             className="font-roboto text-[16px] md:text-[18px] text-gray-600 leading-relaxed"
@@ -73,7 +102,7 @@ export function NewsInsights() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            Discover our innovative construction projects, showcasing quality, sustainability, and cutting-edge design. See how we’re building the future.
+            Discover our range of professional chartered accountancy services, delivering excellence in every engagement.
           </motion.p>
         </div>
 
@@ -87,6 +116,8 @@ export function NewsInsights() {
                 <motion.button
                   key={project.id}
                   onClick={() => setActiveProject(index)}
+                  onMouseEnter={() => setIsHovered(index)}
+                  onMouseLeave={() => setIsHovered(null)}
                   className={`w-full text-left group ${
                     index === activeProject ? "opacity-100" : "opacity-50 hover:opacity-70"
                   }`}
@@ -94,17 +125,23 @@ export function NewsInsights() {
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
                   <div className="flex items-start gap-4 md:gap-6">
-                    <span className="font-playfair text-sm font-medium text-[#4181DA] pt-1">
+                    <span className={`font-playfair text-sm font-medium transition-colors duration-200 ${
+                      index === activeProject ? "text-[#4181DA]" : "text-gray-400"
+                    }`}>
                       {String(index + 1).padStart(2, '0')}
                     </span>
                     <div className="flex-1">
-                      <h3 className="font-playfair text-[20px] md:text-[24px] text-gray-900 font-bold mb-3">
+                      <h3 className={`font-playfair text-[20px] md:text-[24px] font-bold mb-3 transition-colors duration-200 ${
+                        index === activeProject ? "text-gray-900" : "text-gray-700"
+                      }`}>
                         {project.title}
                       </h3>
                       <div className="flex flex-wrap items-center gap-4 text-gray-500">
-                        <span className="font-roboto text-[15px]">{project.location}</span>
+                        <span className="font-roboto text-[15px] bg-gray-100 px-3 py-1 rounded-full">
+                          {project.category}
+                        </span>
                         <span className="hidden md:block w-1 h-1 rounded-full bg-gray-300" />
-                        <span className="font-roboto text-[15px]">{project.value}</span>
+                        <span className="font-roboto text-[15px]">{project.location}</span>
                       </div>
                       {index === activeProject && (
                         <motion.div 
@@ -121,12 +158,11 @@ export function NewsInsights() {
             </div>
 
             {/* View All Button */}
-            <motion.button
+            <Link to="/services" 
               className="group inline-flex items-center gap-4 text-[#4181DA] hover:text-gray-900 transition-colors"
-              whileHover={{ x: 10 }}
             >
               <span className="font-roboto text-[14px] font-semibold tracking-[0.2em] uppercase">
-                View All Projects
+                View All Services
               </span>
               <svg 
                 className="w-4 h-4 transform transition-transform group-hover:translate-x-1"
@@ -139,7 +175,7 @@ export function NewsInsights() {
                   clipRule="evenodd" 
                 />
               </svg>
-            </motion.button>
+            </Link>
           </div>
 
           {/* Right Content - Project Image */}

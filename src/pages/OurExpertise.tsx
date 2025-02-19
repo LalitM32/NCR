@@ -21,71 +21,56 @@ export default function OurExpertise() {
   const services = [
     {
       icon: Building2,
-      title: "Infrastructure Development",
-      description: "Large-scale civil and railway infrastructure projects, including buildings with pre-engineered steel structures. Delivered complex solutions for clients like Ircon International."
+      title: "Direct Tax Services",
+      description: "Comprehensive tax planning, ITR filing, tax assessments, and compliance management for individuals and businesses."
     },
     {
       icon: Factory,
-      title: "Multi-Level Parking Solutions",
-      description: "Innovative urban parking systems using composite steel technology, designed for sustainability. Successfully implemented in Mussoorie and Rohtak."
+      title: "GST Services",
+      description: "Complete GST solutions including registration, returns filing, reconciliations, and GST audit services."
     },
     {
       icon: Building,
-      title: "Educational & Institutional Facilities",
-      description: "Community-focused infrastructure, such as the CM Rise School in Madhya Pradesh, featuring academic blocks, multipurpose halls, and childcare facilities."
+      title: "Audit & Assurance",
+      description: "Statutory audits, internal audits, tax audits, and special purpose audits with detailed reporting and insights."
     },
     {
       icon: CheckCircle2,
-      title: "Factories",
-      description: "SCPL provides construction services for industrial facilities and factories. Their innovative methods ensure efficient and robust structures suitable for industrial use."
+      title: "Corporate Compliance",
+      description: "Company formation, annual compliance, ROC filings, and corporate law advisory services."
     },
     {
       icon: Workflow,
-      title: "Heavy Civil Infrastructure",
-      description: "SCPL undertakes heavy civil infrastructure projects. This includes large-scale projects that require specialized engineering and construction expertise."
+      title: "Business Advisory",
+      description: "Strategic business consulting, financial planning, and growth advisory for businesses of all sizes."
     },
     {
       icon: ArrowRight,
-      title: "Civil Infrastructure Development",
-      description: "SCPL is involved in the development of civil infrastructure. This encompasses a variety of projects aimed at improving the nation's infrastructure."
-    },
-    {
-      icon: ChevronRight,
-      title: "Pre-Engineered Building Construction",
-      description: "SCPL uses pre-engineered building (PEB) systems in their construction projects. Their approach combines PEB with concrete and other materials to reduce project time and dead load."
-    },
-    {
-      icon: Building2,
-      title: "Retail Projects",
-      description: "SCPL is involved in the development of retail spaces. This may include shopping centers and other commercial retail structures."
-    },
-    {
-      icon: ChevronRight,
-      title: "Commercial Projects",
-      description: "SCPL undertakes commercial construction projects. This may include office buildings and other commercial spaces."
+      title: "Accounting Services",
+      description: "Professional bookkeeping, accounting, and financial statement preparation with the highest standards."
     }
   ];
 
   const workflowSteps = [
     {
       number: "01",
-      title: "Innovative Planning",
-      description: "Future-focused feasibility studies and design, proven in pioneering projects like Mussoorie's first multi-level hill car park."
+      title: "Initial Consultation",
+      description: "Understanding your needs through detailed discussion and requirement analysis."
     },
     {
       number: "02",
-      title: "Collaborative",
-      description: "Cross-departmental expertise (civil engineering, procurement, safety) ensures precise budgeting, scalable frameworks, and risk mitigation."
+      title: "Strategic Planning",
+      description: "Developing customized solutions and strategies aligned with your financial goals."
     },
     {
       number: "03",
-      title: "Ethical Construction",
-      description: "Eco-conscious methods (e.g., composite steel tech) and rigorous quality control for durable, low-impact structures."
+      title: "Implementation",
+      description: "Executing planned strategies with precision and attention to detail."
     },
     {
       number: "04",
-      title: "Excellence in Delivery",
-      description: "Certified stability, client handovers, and standout results like the tech-integrated CM Rise School."
+      title: "Monitoring & Review",
+      description: "Regular follow-ups and adjustments to ensure optimal results."
     }
   ];
 
@@ -97,8 +82,8 @@ export default function OurExpertise() {
       <section className="relative h-[70vh] w-full bg-gray-800">
         <div className="absolute inset-0">
           <img
-            src="https://saariga.co.in/wp-content/uploads/2024/03/WhatsApp-Image-2021-12-21-at-10.51.42-AM-1024x576.jpeg" 
-            alt="Construction Expertise"
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3" 
+            alt="Financial Expertise"
             className="w-full h-full object-cover opacity-50"
             loading="lazy"
           />
@@ -121,9 +106,14 @@ export default function OurExpertise() {
               <motion.h1 
                 className="text-white text-5xl md:text-6xl lg:text-7xl font-playfair font-bold max-w-3xl mb-6"
               >
-                Building Excellence Through Innovation
+                Comprehensive Financial Solutions
               </motion.h1>
 
+              <motion.p
+                className="text-gray-300 text-lg md:text-xl max-w-2xl"
+              >
+                Expert chartered accountancy services delivering excellence in taxation, audit, and financial advisory.
+              </motion.p>
             </motion.div>
           </div>
         </div>
@@ -147,7 +137,7 @@ export default function OurExpertise() {
             whileInView={fadeInUp.visible}
             viewport={{ once: true }}
           >
-            Comprehensive Construction <br />Solutions
+            Professional Financial <br />Services
           </motion.h2>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -166,7 +156,6 @@ export default function OurExpertise() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{service.title}</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
-
               </motion.div>
             ))}
           </div>

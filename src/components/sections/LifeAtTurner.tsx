@@ -15,9 +15,9 @@ export function LifeAtTurner() {
             >
               <img
                 loading="lazy"
-                src="https://ep-turnerconstruction-prod-asdcetgubtducba3.z01.azurefd.net/thumbs/041223-stock-089_1_thumb-blocks-left-view.jpg?v=060ac"
+                src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3"
                 className="w-full h-full object-cover"
-                alt="Modern airport terminal with sustainable architecture and community spaces"
+                alt="Professional financial consultants in a modern office setting"
               />
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
@@ -32,7 +32,7 @@ export function LifeAtTurner() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              INDIA
+              EXPERTISE
             </motion.span>
             
             <motion.h2 
@@ -41,7 +41,7 @@ export function LifeAtTurner() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              Our Work In Your Local Community
+              Your Trusted Financial Partner
             </motion.h2>
             
             <motion.p 
@@ -50,17 +50,17 @@ export function LifeAtTurner() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              Together we can grow communities, strengthen economies, and improve lives.
+              We provide comprehensive financial solutions that help businesses thrive. Our expertise ensures your success in today's dynamic market.
             </motion.p>
 
             <motion.button 
               className="group inline-flex items-center gap-3 text-[#4181DA] hover:text-gray-900 transition-colors"
               whileHover={{ x: 10 }}
-              aria-label="Learn more about our community work"
+              aria-label="Learn more about our financial services"
               tabIndex={0}
             >
               <span className="font-roboto text-[14px] font-semibold tracking-[0.2em] uppercase">
-                Learn More
+                Explore Services
               </span>
               <svg 
                 className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
